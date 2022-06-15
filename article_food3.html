@@ -1,0 +1,482 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            background-color: #F0E8B6;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 199px;
+            padding-right: 199px;
+        }
+        
+        .header-link{
+            color: black;
+            text-decoration: none;
+        }
+
+        .title {
+            height: 200px;
+            background-color: #FFFDED;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            color: #425828;
+            display: flex;
+            padding-left: 199px;
+            padding-right: 199px;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: 200;
+            font-size: 24px;
+            line-height: 29px;
+            color: #657256;
+            display: flex;
+            padding-left: 199px;
+            padding-bottom: 5px;
+        }
+
+        h3{
+            display:flex;
+            justify-content: space-between;
+            padding-right: 199px;
+        }
+
+        span {
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 24px;
+            color: #978E8E;
+            padding-left: 199px;
+            flex-wrap: nowrap;
+        }
+
+        .article {
+            background-color: #F3F2E7;
+            padding-left: 199px;
+            padding-right: 199px;
+            padding-top: 38px;
+        }
+
+        .hero-image-container {
+            width: 1090px;
+            background-color: #FFFFFF;
+            padding-top: 24px;
+            padding-bottom: 75px;
+            padding-left: 15px;
+            padding-right: 24px;
+            margin-bottom: 35px;
+        }
+
+        .hero-image{
+            padding-left: 40px;
+        }
+
+        p {
+            width: 1095.85px;
+            text-align: justify;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            color: #4A4949;
+            margin-bottom: 50px;
+        }
+
+        .subtitle {
+            font-weight: 400;
+            font-size: 40px;
+            color: #425828;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #carousel-controls {
+            width: 843.5px;
+            height: auto;
+        }
+
+        .d-block {
+            width: 100%;
+        }
+
+        .carousel-container {
+            width: 1090px;
+            background-color: #FFFFFF;
+            padding-top: 15px;
+            padding-bottom: 75px;
+            padding-left: 123px;
+            padding-right: 123px;
+            margin-bottom: 35px;
+        }
+
+        .credit {
+            padding-top: 40px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #978E8E;
+            display: inline-block;
+        }
+
+        .decor-circle {
+            display: inline-block;
+            float: right;
+            padding-top: 40px;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 35px;
+            color: #4A4949;
+        }
+
+        .info {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            color: #4A4949;
+        }
+
+        .fb-link {
+            background-color: #ADC197;
+            margin-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .buttons {
+            height: auto;
+            width: 592px;
+            border-radius: 50px;
+            background-color: #F2EDCD;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .social {
+            background-color: #F2EDCD;
+            border: none;
+        }
+
+        .like {
+            height: 45px;
+            width: 45px;
+            background-color: transparent;
+            color: #425828;
+            border-color: #425828;
+            border-radius: 50px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+
+        .like:hover {
+            background-color: #425828;
+            color: #F2EDCD;
+        }
+
+        .recommend {
+            font-weight: 400;
+            font-size: 24px;
+            color: #4A4949;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .recommend-article {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 40px;
+            color: #4A4949;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hashtags {
+            display: flex;
+            justify-content: space-between;
+            align-content: stretch;
+            flex-wrap: wrap;
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 50px;
+            padding-bottom: 70px;
+        }
+
+        .hashtag {
+            width: 125px;
+            height: 48.22px;
+            background: #F0E8B6;
+            border: 1px solid #ABA36D;
+            border-radius: 100px;
+            margin: 10px
+        }
+
+        .footer {
+            height: 339px;
+            background-color: #F0E8B6;
+            display: flex;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 275px;
+            height: 286px;
+            position: absolute;
+            top: 26px;
+            left: 150px
+        }
+
+        .author {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #657256;
+            padding:20px;
+        }
+
+        .authors-1{
+            padding-left: 600px;
+        }
+
+        .authors-2{
+            padding-right: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header --> <!-- 要insert分頁和首頁hyperlink -->
+
+    <div class="header">
+        <div>
+            <a href="https://107405117.github.io/bubu/homepage-button.html">
+                <img src="./assets/Logo_無字版 2.svg">
+            </a>
+        </div>
+        <div> 
+            <a class="header-link" href="https://andrewtsng019.github.io/final-group4/type-play.html" target="_blank">·帶你去玩</a>
+        </div>
+        <div>
+            <a class="header-link">·帶你去吃</a>
+        </div>
+        <div>
+            <a class="header-link" href="https://andrewtsng019.github.io/final-group4/type-watch.html" target="_blank">·帶你去看</a>
+        </div>
+    </div>
+
+    <!-- 標題 -->
+    <div class="title">
+        <h1>全台第一家日本精釀啤酒餐廳Far Yeast！菜色全公布～</h1>
+        <h2>一秒到日本的餐酒館，餐酒到空間都迷人～</h2>
+        <h3>
+            <span>
+                BY COCO HUANG 與 珊寧</span>
+            <span>2021/10/25</span>
+        </h3>
+    </div>
+
+    <!-- 內文 -->
+
+    <div class="article">
+        <div class="hero-image-container">
+            <div class="hero-image"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/collage-1634701659.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*"></div>
+            <div class="credit">dr.</div>
+            <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+        </div>
+        <p>與日本同步乾杯！全台第一家日本精釀啤酒餐廳「Far Yeast Taiwan Craftbeer Gastropub 源流台灣精釀啤酒餐酒館」開幕了，這是日本Far Yeast Brewing 株式会社的首家海外直營店舖！延續日本店鋪風格，店鋪設置15支啤酒龍頭，透過Tap Beer拉霸型態供應桶裝的Far Yeast源流、KAGUA馨和兩大系列，與精選的日本志賀高原、伊勢角屋、箕面啤酒、Y.Market等限量精釀啤酒， 其中還有「UGLY HALF BEER 酉鬼啤酒」聯名合作的限定版！佐酒的和風小食，也很精采，值得一試。
+        </p>
+        <p><b>亮點1：與日本同步的浮誇啤酒塔</b></p>
+        <p>店鋪透過Tap Beer拉霸型態，供應單杯品飲，主要推薦Far Yeast源流、KAGUA馨和兩大系列，與精選的日本志賀高原、伊勢角屋、箕面啤酒、Y.Market等限量精釀啤酒。選擇障礙發作也沒關係，每款拉霸啤酒在點餐前都可以免費試喝，還有超壯觀、聚餐必備的「啤酒塔」（1200元），直接讓你一次擁有10款拉霸啤酒！</p>
+        <p><b>亮點2：Far Yeast Taiwan X 台灣酉鬼限定聯名款</b></p>
+        <p>Far Yeast Brewing與台灣精釀啤酒品牌「UGLY HALF BEER 酉鬼啤酒」聯名合作！日方選用主打台灣荔枝的「Far Yeast Lychee Haze」，以獨特啤酒花突顯出荔枝的柔和香甜，於日本販售，而酉鬼啤酒以日本柚子詮釋爽快的「柚子沙瓦 Hazy IPA」於台北店鋪販售，兩款都是這秋季最夢幻的水果風味啤酒！</p>
+        <p><b>亮點3：現代和食料理必點</b></p>
+        <p>喝酒當然要有下酒菜！
+            Far Yeast Taiwan的美食則以「和」為元素表現日本風情，並精心設計出可以完美搭配精釀啤酒的菜單。除了日本店鋪的人氣經典菜色，像馬鈴薯擔擔沙拉等，日籍料理長還用台灣在地的剝皮辣椒融入餐點，如東京白啤酒酸醃菜！</p>
+       
+        
+
+        <!-- carousel -->
+        <div class="subtitle">Far Yeast Taiwan Craftbeer Gastropub三大亮點</div>
+
+        <div class="carousel-container">
+            <div id="carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/collage-5-1634714946.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/collage-0-1634719576.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/collage-6-1634715115.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="credit">dr.</div>
+            <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+        </div>
+
+        <!-- 店家介紹 -->
+    
+       
+
+        <div class="bold">Far Yeast Taiwan Craftbeer Gastropub 源流台灣精釀啤酒餐酒館</div>
+        <div class="info">
+            <div>地址：台北市大安區光復南路322號</div>
+            <div>營業時間：11:30 - 14:30，最後點餐時間14:00；17:30 - 24:00，最後點餐時間23:30（週末營業時間待開幕後調整，無公休日）</div>
+            <div>電話：（02）2776-2877</div>
+            <div>交通：捷運國父紀念館站2號出口步行4分鐘</div>
+            <div>座席：最大28席次（一樓12座位、二樓10座位，戶外6座位）</div>
+            
+        </div>
+
+        <!-- FB Link -->
+        <button class="fb-link">
+            <a href="https://www.instagram.com/faryeasttaiwan/" target="_blank" style="color: #404040">立刻訂</a>
+        </button>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <div>
+                <button class="like like-1">♡</button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://www.facebook.com/elle.tw" target="_blank"><img
+                            src="./assets/Facebook Icon 1.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://www.instagram.com/elletaiwan/" target="_blank"><img
+                            src="./assets/instagram icon 1.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://twitter.com/ellemagazine" target="_blank"><img src="./assets/twitter.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://page.line.me/ojy7419l?openQrModal=true" target="_blank"><img
+                            src="./assets/Line Icon.svg"></a>
+                </button>
+            </div>
+        </div>
+
+        <!-- 文章推薦 -->
+
+        <div class="recommend">猜你會喜歡......</div>
+        <div class="recommend-article">
+            <div>
+                <a class="recommend-article" href="https://www.elle.com/tw/fashion/luxury/g40161880/sotheby-platinum-jubilee-tiara/" target="_blank">文章一：超罕見展覽！蘇富比展出近50頂「英國王室皇冠」，慶賀英國女王登基70週年</a>
+            </div>
+            <div>
+                <a class="recommend-article" href="https://www.elle.com/tw/life/culture/g40126864/mary-quant-fashion-revolutionary/" target="_blank">文章二：《瑪莉官：時尚革命者》亞洲首展！「迷你裙之母」不為人知的故事、展覽亮點一次看</a>
+            </div>
+            <div>
+                <a class="recommend-article" href="https://www.elle.com/tw/life/culture/g38247824/2022-exhibition-new/" target="_blank">文章三：2022必追展覽！「安藤忠雄展、吉卜力高畑勲展、teamLab高雄」，開展資訊＋購票方式總整理</a>
+            </div>
+        </div>
+
+        <!-- Hashtag -->
+
+        <div class="hashtags">
+            <div><button class="hashtag">台北</button></div>
+            <div><button class="hashtag">啤酒</button></div>
+            <div><button class="hashtag">餐酒館</button></div>
+            <div><button class="hashtag">日本</button></div>
+            <div><button class="hashtag">美食</button></div>
+            <div><button class="hashtag">聯名</button></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img src="./assets/Logo_有字版.png" class="logo">
+        </div>
+            <div class="authors-1">
+                <div class="author">
+                    珊寧
+                </div>
+                <div class="author">
+                    黃煒晶
+                </div>
+                <div class="author">
+                    莊宇玫
+                </div>
+            </div>
+            <div class="authors-2">
+                <div class="author">
+                    莊文源
+                </div>
+                <div class="author">
+                    鄭治綺
+                </div>
+                <div class="author">
+                    李法賢老師
+                </div>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
